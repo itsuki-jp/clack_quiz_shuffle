@@ -16,6 +16,7 @@ const shuffle = ([...array]) => {
 }
 
 // 問題文を何個か用意しておく
+// choiceが冗長なので、いい感じに変える
 let quiz_set = [{
         q: `"大阪"の郡と名のつく地名は？`,
         choice: [
