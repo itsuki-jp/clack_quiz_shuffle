@@ -1,0 +1,14 @@
+body {
+    background-color: darkgreen;
+    color: black;
+}
+
+input {
+    width: 12.5%;
+    height: 80px;
+    margin-left: 15%;
+}
+
+.center {
+    text-align: center;
+}
