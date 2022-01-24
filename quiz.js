@@ -75,8 +75,8 @@ console.log(random_arr);
 for (let i = 0; i < N; i++) {
     let j = random_arr[i];
     if (quiz.choice[j][1] === 1) {
-        choice.innerHTML += `<input type="submit" value="${choices[j][0]}" onclick="ans('ok')">`;
+        choice.innerHTML += `<input type="submit" class = "choice" value="${choices[j][0]}" onclick="ans('ok')">`;
     } else {
-        choice.innerHTML += `<input type="submit" value="${choices[j][0]}" onclick="ans('ng')">`;
+        choice.innerHTML += `<input type="submit" class = "choice" value="${choices[j][0]}" onclick="ans('ng')">`;
     }
 }

@@ -6,9 +6,19 @@ body {
 input {
     width: 12.5%;
     height: 80px;
-    margin-left: 15%;
+}
+
+.choice {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
 }
 
 .center {
     text-align: center;
+}
+
+.center_button {
+    display: flex;
+    justify-content: center;
 }
