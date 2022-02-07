@@ -1,7 +1,7 @@
 const wisdom_genre = ["楽器", "演劇", "ジャンル3", "ジャンル4"];
 const wisdommmm = [
-    ["ギターについて", "ドラムについて"],
-    ["シェイクスピアについて", "劇団四季について"],
+    ["ギターについて", "ギターについて2 ", "ドラムについて"],
+    ["シェイクスピアについて", "シェイクスピアについて2", "劇団四季について"],
     ["a", "b", "c", "d"],
     ["a", "b", "c", "d"]
 ];
@@ -46,6 +46,7 @@ const show = (index) => {
         let found = false;
         for (const elem of wisdom) {
             if (elem.includes(userInputValue)) {
+                console.log("found");
                 found = true;
                 let temp = document.createElement("p");
                 temp.innerText = elem;
