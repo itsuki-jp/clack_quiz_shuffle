@@ -40,7 +40,6 @@ for (let i = 0; i < quiz.choices.length; i++) {
     temp.innerText = quiz.choices[random_arr[i]];
     // クリックされたときの処理
     temp.onclick = () => {
-        console.log(selected);
         if (selected != null) {
             const change = document.getElementById("choice").children[selected];
             change.classList.toggle("selected");
@@ -50,7 +49,7 @@ for (let i = 0; i < quiz.choices.length; i++) {
         selected = i;
         temp.classList.toggle("selected");
         temp.classList.toggle("not_selected");
-        console.log(selected);
+
     }
     choice.appendChild(temp);
 }
