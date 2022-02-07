@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+.selected {
+    background-color: lightcoral;
+}
+
+.not_selected:hover {
+    background-color: rgb(128, 240, 216);
+}
+
+.choice {
+    width: 150px;
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 20px;
+}
+
+#btn {
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 20px;
+}
