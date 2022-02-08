@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+}
+
+#title {
+    font-size: 40px;
+}
+
+#question {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.selected {
+    background-color: lightcoral;
+}
+
+.not_selected:hover {
+    background-color: rgb(128, 240, 216);
+}
+
+.choice {
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 20px;
+}
+
+#confirm {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+#confirm:hover {
+    background-color: rgb(128, 240, 216);
+}
