@@ -9,3 +9,7 @@
 ### url_param
 最初のページで問題を選択した問題に応じて、飛んだ先の問題を変える  
 github pagesだと動かない。ダウンロードして、ローカルで実行する必要あり
+
+### [rank](https://itsuki-jp.github.io/clack_quiz_shuffle/rank/)
+問題を再帰で表示する  
+最後の問題を答え終わると、正答数とランク（実装中）を表示する
