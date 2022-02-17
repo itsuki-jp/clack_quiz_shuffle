@@ -1,3 +1,4 @@
+// 問題セット
 const quizData = [{
         title: "織田信長は何年生まれ？",
         choices: [
@@ -39,10 +40,16 @@ const quizData = [{
         correctId: 1,
     },
 ]
+
+// ランクの一覧
+const rank = ["B", "A", "S", "SS", "SSS"]
+
+//　HTMLからいろいろな要素を取得して、変数に入れている
 const quizSentence = document.getElementById('quiz_sentence');
 const quizAnswerSelect = document.getElementById('quiz_answer_select');
 const quizSendButton = document.getElementById('quiz_send_button');
 const quizResult = document.getElementById('quiz_result');
+
 // 正解数を保存する変数
 let correct_num = 0;
 
@@ -55,21 +62,29 @@ function func(idx) {
         quizSentence.remove();
         quizAnswerSelect.remove();
         quizSendButton.remove();
-        // 正解数とランクを表示する（ランクの判定はここで行えば良い）
-        quizResult.innerText = `正解数 : ${correct_num}\nRank : SSS`;
+        // 正解数とランクを表示する
+        quizResult.innerText = `正解数 : ${correct_num}\nRank : ${rank[correct_num/1]}`;
         // quizResultにクラス名 end を付与
         quizResult.classList.add("end");
         // 再帰を終了する
         return;
     }
+
+    // idx番目の問題を使い、選択肢等を表示していく
     const useQuizData = quizData[idx];
+    // idx != 0　の時は、前の問題を消す必要がある
     quizResult.innerHTML = "";
     quizAnswerSelect.innerHTML = "";
+
+    // 選択肢を表示する
     for (const choice of useQuizData.choices) {
         quizAnswerSelect.innerHTML += `<input id="${choice.id}" class="radio-inline__input" type="radio" name="answer" value="${choice.id}"><label class="radio-inline__label" for="${choice.id}">${choice.value}</label>`
     }
 
+    // 問題文を表示する
     quizSentence.innerHTML = `<p>${useQuizData.title}</p>`
+
+    // クリックされたときの動作
     quizSendButton.onclick = ev => {
         for (const element of quizAnswerSelect.querySelectorAll("input")) {
             if (element.checked) {
@@ -81,6 +96,7 @@ function func(idx) {
                 quizResult.innerHTML = `<p>${str}</p>`
             }
         }
+
         // 回答ボタンを押した一秒後に次の問題に移る
         setTimeout(() => {
             func(idx + 1)
@@ -88,4 +104,5 @@ function func(idx) {
 
     };
 }
+// 関数の呼び出し、最初の問題から表示していく
 func(0);
