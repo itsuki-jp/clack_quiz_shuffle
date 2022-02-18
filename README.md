@@ -12,9 +12,8 @@
 ### [wisdom2](https://itsuki-jp.github.io/clack_quiz_shuffle/wisdom2/)
 上のwisdomが少し変わったやつ。ほぼ同じ
 
-### url_param
+### [url_param](https://itsuki-jp.github.io/clack_quiz_shuffle/url_param/index.html)
 最初のページで問題を選択した問題に応じて、飛んだ先の問題を変える  
-github pagesだと動かない。ダウンロードして、ローカルで実行する必要あり
 
 ### [rank](https://itsuki-jp.github.io/clack_quiz_shuffle/rank/)
 問題を再帰で表示する  
