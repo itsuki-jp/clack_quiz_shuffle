@@ -16,7 +16,7 @@ const quizzz = [
 
 const arr = location.href.split("/"); // 現在のページを取得
 // 問題セットが載っているページ・問題が載っているページで処理を変える
-
+console.log(arr[arr.length - 1]);
 // もし現在のページが問題セットが載ってる方であれば
 if (arr[arr.length - 1] === "index.html") {
     const questionArea = document.getElementById("questionArea");
